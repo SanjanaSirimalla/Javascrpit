@@ -54,3 +54,24 @@ const myFunction=function(){ //type is function i.e. object function
     console.log("hello world");
 }
 
+//********************another video***********************************
+//2 types of memory-stack memory and heap memory
+//Stack(Primitive) => when stack memory is used,we get copy of any variable declared 
+//Heap(Non Primitive) =>when heap memory is used, we get reference of variable,any changes are done on original values
+
+let name="sanjana"
+let anotherName= name
+anotherName = "sahu"
+console.log(name);//sanjana
+console.log(anotherName);//sahu
+
+let userOne={
+    email:"iuotro@gmail.com",
+    upi:"user2ybl"
+}
+let userTwo=userOne
+userTwo.email="sanjana@jsdk.com"//dot is used to access diff properties in objects individually
+
+console.log(userOne.email);
+console.log(userTwo.email);
+//both give sanjana@jsdk.com
