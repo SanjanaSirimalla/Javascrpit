@@ -11,3 +11,10 @@ d='dsh'
 
 console.log(a);
 console.table([a,b,c,d])
+
+//comments
+/*
+prefer not to user var
+coz of issue in block scope and functional scope
+*/
+
