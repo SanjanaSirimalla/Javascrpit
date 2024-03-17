@@ -72,6 +72,7 @@ result2 -> ?? in this line,a function is assigned to variable result2,so we came
     this value of total will be returned in global execution context
 result2 -> 12
 
-
-
 */
+
+//call stack in vid
+//LIFO technique
