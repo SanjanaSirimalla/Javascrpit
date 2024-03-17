@@ -26,7 +26,7 @@ console.log(result1);
 console.log(result2);
 /*
 step-1) global execution
-whatever is the length of code, it will be run by global execution and stored inside this
+whatever is the length of code, it will be run by global execution and stored inside "this"
 
 step-2) memory phase
 all the variables will be collected and stored
@@ -52,8 +52,8 @@ result1 -> ??  in this line,a function is assigned to variable result1,so we cam
 
     execution phase
     num1 -> 10
-    num2 -> 2
-    total ->12
+    num2 -> 5
+    total ->15
     this value of total will be returned in global execution context
 result1 -> 15
 
@@ -67,8 +67,8 @@ result2 -> ?? in this line,a function is assigned to variable result2,so we came
 
     execution phase
     num1 -> 10
-    num2 -> 5
-    total ->15
+    num2 -> 2
+    total ->12
     this value of total will be returned in global execution context
 result2 -> 12
 
