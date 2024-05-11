@@ -87,3 +87,5 @@ const cart=[
 ]
 const pay=cart.reduce((acc,item) => (acc + item.price) ,0)
 console.log(pay)
+
+//done
