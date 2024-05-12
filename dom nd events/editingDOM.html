@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM editing</title>
+</head>
+<body style="background-color:black; color:white">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLang(langName){
+        const li=document.createElement('li')
+        li.innerHTML=`${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang('python')
+    addLang('React')
+
+    //optimised way
+    function addLanguage(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('typescript')
+
+//editing
+    const seclang=document.querySelector('li:nth-child(2)')
+    //seclang.innerHTML='golang' //not an optimised way
+    const newli=document.createElement('li')
+    newli.textContent='Golang' //textContent is similar to innerHTML (different way of adding text)
+    seclang.replaceWith(newli) //initially 2nd language was python which got replaced by Golang
+
+//edit
+    const fristLang=document.querySelector('li:first-child')
+    fristLang.outerHTML='<li>PYTHON</li>'    
+
+//remove
+    const lastLang=document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
