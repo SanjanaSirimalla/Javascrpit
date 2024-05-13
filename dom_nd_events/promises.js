@@ -97,16 +97,17 @@ consumePromiseFive()
 
 
 //handling API request
-// async function getAllUsers(){
-//     try{
-//         const response=await fetch('https://jsonplaceholder.typicode.com/users')
-//         const data=await response.json()
-//         console.log(data)
-//     }catch(error){
-//         console.log("E:",error)
-//     }
-// }
-// getAllUsers()
+
+async function getAllUsers(){
+    try{
+        const response=await fetch('https://jsonplaceholder.typicode.com/users')
+        const data=await response.json()
+        console.log(data)
+    }catch(error){
+        console.log("E:",error)
+    }
+}
+getAllUsers()
 
 //the same above thing using then catch
 fetch('https://jsonplaceholder.typicode.com/users')
